@@ -85,41 +85,99 @@ body {
     font-weight: bold;
  }
 
-/* styles.css */
-.answer-option {
-  position: relative;
-  padding-left: 2.5rem; /* space for the circle */
+ .answer-choice {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.answer-option .circle {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.5rem;
-  height: 1.5rem;
+.circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid blue;
   border-radius: 50%;
-  border: 2px solid #007bff; /* Default circle color */
-  background-color: transparent; /* Circle is transparent by default */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  position: relative;
+}
+
+.small-circle {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .answer-option.selected .circle {
-  background-color: #007bff; /* Circle color when selected */
+  border-color: green;
 }
 
-.answer-option.selected .circle::after {
-  content: "";
+.answer-option.selected .small-circle {
+  background-color: green;
+}
+
+.next-button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Add this to your existing styles.css */
+
+.grid-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #fff; /* Inner circle color */
-  transform: translate(-50%, -50%);
+  top: 20px;
+  right: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.answer-option:hover .circle {
-  border-color: #0056b3; /* Change border color on hover */
+.cell {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+.cell:hover {
+  background-color: #444;
+}
+
+.cell.active {
+  background-color: #666;
+}
+
+/* Tambahkan ke styles.css */
+.cell {
+  /* Gaya default kotak soal */
+}
+
+.cell.active {
+  /* Gaya untuk kotak soal yang sedang aktif */
+}
+
+.cell.answered {
+  background-color: green; /* Warna hijau muda untuk kotak soal yang sudah terisi */
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.select-allowed {
+  user-select: text;
+}
