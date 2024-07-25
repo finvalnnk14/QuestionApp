@@ -1,0 +1,125 @@
+body {
+
+    background-color: #181818;
+
+    color: #fff;
+
+    font-family: sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+  }
+
+
+  .container {
+
+    background-color: #282828;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+  }
+
+
+  .header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+  }
+
+
+  .header h1 {
+
+    margin: 0;
+
+  }
+
+
+  .header .time {
+
+    font-size: 14px;
+
+  }
+
+
+  .question {
+
+    margin-bottom: 20px;
+
+  }
+
+  .question-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Menambahkan jarak bawah jika diperlukan */
+ }
+ 
+ .question-timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ .question {
+    font-size: 18px; /* Atur ukuran font jika diperlukan */
+ }
+ 
+ .timer {
+    font-size: 18px; /* Atur ukuran font jika diperlukan */
+    font-weight: bold;
+ }
+
+/* styles.css */
+.answer-option {
+  position: relative;
+  padding-left: 2.5rem; /* space for the circle */
+}
+
+.answer-option .circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #007bff; /* Default circle color */
+  background-color: transparent; /* Circle is transparent by default */
+}
+
+.answer-option.selected .circle {
+  background-color: #007bff; /* Circle color when selected */
+}
+
+.answer-option.selected .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff; /* Inner circle color */
+  transform: translate(-50%, -50%);
+}
+
+.answer-option:hover .circle {
+  border-color: #0056b3; /* Change border color on hover */
+}
+

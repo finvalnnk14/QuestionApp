@@ -1,0 +1,88 @@
+/* login.css */
+
+/* Increase the height and padding of the moving text container */
+.moving-text-container {
+    position: absolute; /* Position the container absolutely at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    padding: 20px; /* Increase padding for more space */
+    height: 80px; /* Increase height to make the container taller */
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    font-size: 20px; /* Increase font size if needed */
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .container {
+    position: relative; /* Make sure the container is positioned relatively */
+    padding-top: 100px; /* Adjust padding-top to make room for the larger moving text */
+  }
+  
+  .slide-form {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #333;
+    color: white;
+  }
+  
+  .form-group button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-blue-600 {
+    color: #007bff;
+  }
+  
+  .text-blue-600:hover {
+    text-decoration: underline;
+  }
+  
