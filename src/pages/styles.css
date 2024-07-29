@@ -181,3 +181,12 @@ body {
 .select-allowed {
   user-select: text;
 }
+
+/* styles.css */
+.cell.answered.correct {
+  background-color: #4caf50; /* Hijau untuk jawaban yang benar */
+}
+
+.cell.answered.incorrect {
+  background-color: #f44336; /* Merah untuk jawaban yang salah */
+}

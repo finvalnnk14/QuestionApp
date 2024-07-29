@@ -113,7 +113,7 @@ function Home(props) {
   }
 
   const clearTimer = (e) => {
-    setTimer("15:00");
+    setTimer("5:00");
     if (Ref.current) clearInterval(Ref.current);
     const id = setInterval(() => { startTimer(e) }, 1000);
     Ref.current = id;
@@ -121,7 +121,7 @@ function Home(props) {
 
   const getDateTime = () => {
     let deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 900);
+    deadline.setSeconds(deadline.getSeconds() + 100);
     return deadline;
   }
 
@@ -143,7 +143,7 @@ function Home(props) {
         {triviaData.map((_, index) => (
           <div
             key={index + 1}
-            className={`cell ${currentQuestion === index ? 'active' : ''} ${selectedAnswers[index] ? 'answered' : ''}`}
+            className={`cell ${currentQuestion === index ? 'active' : ''} ${selectedAnswers[index] ? 'answered' : ''} ${selectedAnswers[index]?.isCorrect ? 'correct' : 'incorrect'}`}
             data-number={index + 1}
             onClick={() => handleQuestionChange(index)}
           >

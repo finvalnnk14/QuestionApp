@@ -1,0 +1,279 @@
+
+.landing-page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the landing page takes up the full viewport height */
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Ensures the header stays on top of other elements */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 20px;
+  padding-top: 80px; /* Adjust this value to create space for the fixed header */
+  text-align: center;
+  flex: 1; /* Ensures that main content expands to fill available space */
+}
+
+.main-content h2 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+.landing-page-image {
+  width: 100%;
+  height: auto;
+  /* Optional: Add border-radius for smoother appearance */
+}
+
+.button-container {
+  position: relative; /* Adjusted to ensure it's placed correctly */
+  margin-top: 20px; /* Added margin to push buttons down from other content */
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.btn {
+  background-color: #fff; /* Background color of buttons */
+  color: #000; /* Text color of buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block; /* Ensures buttons are inline-block elements */
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ddd; /* Hover effect */
+}
+
+.banner-container h1 {
+  font-size: 40px;
+  margin-top: -120px; /* Adjust margin as needed */
+  text-align: left;
+}
+
+.banner-container h2 {
+  font-size: 1.5em;
+  margin-top: 0.5em; /* Adjust spacing as needed */
+  text-align: left;
+}
+
+.more-buttons {
+  display: flex;
+  gap: 10px; /* Add space between additional buttons */
+  margin-top: 10px;
+}
+
+.btn.more-button {
+  background-color: #28a745; /* Different color for the "More" button */
+}
+
+/* Existing CSS */
+
+/* Existing CSS */
+
+.box {
+  background-color: #b89379; /* Background color for the box */
+  padding: 10px;
+  margin-top: auto; /* Pushes the box to the bottom */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Arrange items in a column */
+  text-align: center; /* Center text horizontally */
+}
+
+.box-image {
+  width: 10cm; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-bottom: 10px; /* Margin below the image */
+}
+
+.box h1, .box h2 {
+  font-size: 40px; /* Same as the font size of "🔔 Waktu Bermain Anda Telah Habis," */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align text to the left */
+  width: 100%;
+}
+
+.learning-environment-image {
+  width: 100%;
+  max-width: 600px; /* Adjust the size as needed */
+  display: block;
+  margin: -110px 0 20px -130px; /* Negative top margin to move the image up and left */
+  float: left; /* Float image to the left */
+  position: relative; /* Change to relative or absolute */
+  z-index: 10; /* Higher value to bring it to the front */
+}
+.kotak {
+  width: 1100px;
+  height: 50px;
+  background-color: white;
+  margin-top: -270px; /* Menaikkan kotak sebesar 50px */
+  margin-left: 300px; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  color: black;
+  font-size: 30px;
+}
+.kotaka {
+  width: 1100px;
+  height: 50px;
+  background-color: white;
+  margin-top: 20px; /* Menaikkan kotak sebesar 50px */
+  margin-left: 300px; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  color: black;
+  font-size: 30px;
+}
+.kotakb {
+  width: 1600px;
+  height: 300px;
+  background-color: #b89379;
+  margin-top: 130px; /* Menaikkan kotak sebesar 50px */
+  margin-left: -10px; /* Menggeser kotak ke kanan sebesar 50px */
+  font-size: 50px;
+}
+.kotakb .small-text {
+  font-size: 30px; /* Adjust this value as needed */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.mtk {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  margin-top: -100px; /* Increased negative margin to raise the box */
+  margin-left: 6px; /* Menggeser kotak ke kanan sebesar 6px */
+  border-radius: 10px;
+  color: black;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  margin-top: 10px; /* Mengatur jarak antara dropdown dan kotak utama */
+  left: 0; /* Sejajarkan dengan kotak .mtk */
+}
+
+.mtk-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.mtk-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.paket-a{
+  border-radius: 30px;
+  width: 10cm;
+  height: 10cm;
+}
+.ket {
+  width: 10cm;
+  height: 8cm;
+  background-color: white;
+  margin-top: -40px; /* Menaikkan kotak sebesar 50px */
+  margin-left: 0px; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  color: black;
+  font-size: 15px;
+}
+.click {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.click:hover {
+  background-color: #0056b3;
+  
+}
+
+
+
+
+
+
+
+  
+  
