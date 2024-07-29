@@ -18,7 +18,7 @@ const Login = () => {
             userCredential.user.getIdToken().then((token) => {
                Cookies.set("firebase_token", token, { expires: 7 });
             });
-            navigate("/");
+            navigate("/home");
             alert("Success Login !!");
          })
          .catch((error) => {
