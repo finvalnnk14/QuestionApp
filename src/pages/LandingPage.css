@@ -242,7 +242,7 @@
   width: 10cm;
   height: 8cm;
   background-color: white;
-  margin-top: -40px; /* Menaikkan kotak sebesar 50px */
+  margin-top: -8cm; /* Menaikkan kotak sebesar 50px */
   margin-left: 0px; /* Menggeser kotak ke kanan sebesar 50px */
   border-radius: 10px; /* Membuat sudut kotak melengkung */
   color: black;
@@ -269,10 +269,58 @@
   
 }
 
-
-
-
-
+.paket-b{
+  border-radius: 30px;
+  width: 10cm;
+  height: 10cm;
+  margin-left: 11cm; /* Menggeser kotak ke kanan sebesar 50px */
+  margin-top: -10cm; /* Menaikkan kotak sebesar 50px */
+}
+.ket-b {
+  width: 10cm;
+  height: 8cm;
+  background-color: white;
+  margin-top: -8cm; /* Menaikkan kotak sebesar 50px */
+  margin-left: 11cm; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  color: black;
+  font-size: 15px;
+}
+.paket-c{
+  border-radius: 30px;
+  width: 10cm;
+  height: 10cm;
+  margin-left: 22cm; /* Menggeser kotak ke kanan sebesar 50px */
+  margin-top: -10cm; /* Menaikkan kotak sebesar 50px */
+}
+.ket-c {
+  width: 10cm;
+  height: 8cm;
+  background-color: white;
+  margin-top: -8cm; /* Menaikkan kotak sebesar 50px */
+  margin-left: 22cm; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  color: black;
+  font-size: 15px;
+}
+.paket-d{
+  border-radius: 30px;
+  width: 9.35cm;
+  height: 10cm;
+  margin-left: 33cm; /* Menggeser kotak ke kanan sebesar 50px */
+  margin-top: -10cm; /* Menaikkan kotak sebesar 50px */
+}
+.ket-d {
+  width: 9.35cm;
+  height: 8cm;
+  background-color: white;
+  margin-top: -1cm; /* Menaikkan kotak sebesar 50px */
+  margin-left: 33cm; /* Menggeser kotak ke kanan sebesar 50px */
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+}
+.next {
+  margin-left: 40cm; /* Menggeser kotak ke kanan sebesar 50px */
+}
 
 
   
